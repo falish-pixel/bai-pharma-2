@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Регистрация</title>
+    <title>Sign in</title>
 </head>
 <body>
     <header id="header">
-        <h1 class="header-title">Регистрация нового аккаунта</h1>
+        
+        <a class="logo-link" href="index.html">
+        <img src="T_T.png" class="left-image" alt>
+        </a>
+        <h1 class="header-title">Sign In</h1>
+
+            
+
     </header>
     <main id="main-content">
         <form class="auth-form">
-            <label for="new-username">Имя пользователя:</label>
+
+            <label for="new-username-name">Name:</label>
+            <input type="text" id="new-username-name" name="username-name" required>
+            <label for="new-username-last">Last name:</label>
+            <input type="text" id="new-username-last" name="username-last" required>
+            <label for="new-username">Username:</label>
             <input type="text" id="new-username" name="username" required>
-            <label for="new-password">Пароль:</label>
+
+            <label for="new-username">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="new-password">Password:</label>
             <input type="password" id="new-password" name="password" required>
-            <button type="submit">Зарегистрироваться</button>
+            <label for="new-password-c">Confirm Password:</label>
+            <input type="password" id="new-password-c" name="password-c" required>
+
+            <div class="auth-buttons">
+            <button class="home-link" href="index.html" type="submit">Sign In</button>
+            </div>
+
         </form>
     </main>
     <footer id="footer">
-        <p class="footer-text">© 2024 Все права защищены.</p>
+        <p class="footer-text">Copyright © 2024 BAI Pharm. All rights reserved.</p>
     </footer>
 </body>
 </html>
